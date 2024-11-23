@@ -1,4 +1,26 @@
 import { Router } from "express";
 
-const router = Router()
+export const router = Router()
+
+router.post("/signup", (req,res)=>{
+res.json({
+    message: "Signup"
+})
+})
+
+router.post("/signin", (req,res)=>{
+    res.json({
+        message: "Signin"
+    })
+})
+
+
+router.get("/elements", (req,res)=>{
+
+})
+
+router.get("/avatars", (req,res)=>{
+    
+})
+
 
